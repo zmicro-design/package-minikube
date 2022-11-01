@@ -9,7 +9,7 @@ help() {
 }
 
 version() {
-  minikube --version
+  minikube version
 }
 
 core() {
