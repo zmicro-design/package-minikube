@@ -33,7 +33,7 @@ install() {
   tar -zxvf $tmp_file >>/dev/null 2>&1
 
   # install
-  sudo mv $bin_file $usr_bin_dir
+  sudo mv $bin_file $usr_bin_dir/$name
 
   # clean
   rm -rf $tmp_dir
