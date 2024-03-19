@@ -1,4 +1,4 @@
 NAME=minikube
-VERSION=v1.0.7
+VERSION=v1.2.0
 MODULE=package
 DESCRIPTION="Run Kubernetes locally"
