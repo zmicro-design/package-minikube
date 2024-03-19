@@ -6,6 +6,16 @@ help() {
   echo ""
 
   minikube --help
+
+  echo ""
+  echo ""
+  echo "############################"
+  log::info ""
+  log::info "if you should run minikube in china:"
+  log::info ""
+  log::info " $ minikube delete && minikube start --image-mirror-country=cn --kubernetes-version=v1.27.4"
+  log::info ""
+  echo "############################"
 }
 
 version() {
@@ -14,7 +24,7 @@ version() {
 
 core() {
   case $1 in
-  -h | --help | help)
+  -h | --help | help | "")
     help
     ;;
   -v | --version | version)
